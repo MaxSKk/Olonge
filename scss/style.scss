@@ -237,17 +237,6 @@ body {
       padding: 73px 0px 146px;
    }
 
-   &__image {
-      position: absolute;
-      bottom: -100%;
-      left: 50%;
-      transform: translate(-60%, 15%);
-
-      img {
-         max-width: 100%;
-      }
-   }
-
    &__text-block {
       max-width: 1005px;
       text-align: center;
@@ -322,6 +311,51 @@ body {
          .button-android {
             margin: 0px 0px 25px;
          }
+      }
+   }
+}
+
+/*==mobile==*/
+
+.mobile {
+   display: flex;
+   justify-content: center;
+   margin-top: -260px;
+
+   &__image {
+      max-width: 548px;
+      transform: translateX(-60px);
+
+      img {
+         width: 100%;
+      }
+   }
+}
+
+@media (max-width: 991.98px) {
+   .mobile {
+      margin-top: -240px;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .mobile {
+      margin-top: -180px;
+
+      &__image {
+         max-width: 400px;
+         transform: translateX(-45px);
+      }
+   }
+}
+
+@media (max-width: 575.98px) {
+   .mobile {
+      margin-top: -140px;
+
+      &__image {
+         max-width: 300px;
+         transform: translateX(-25px);
       }
    }
 }
