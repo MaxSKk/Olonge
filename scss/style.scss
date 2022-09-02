@@ -425,6 +425,10 @@ body {
 
 @media (max-width: 991.98px) {
    .instruction {
+      &__inner {
+         margin-bottom: 130px;
+      }
+
       &__title {
          font-size: 38px;
          margin-bottom: 100px;
@@ -454,6 +458,10 @@ body {
 
 @media (max-width: 767.98px) {
    .instruction {
+      &__inner {
+         margin-bottom: 100px;
+      }
+
       &__title {
          font-size: 32px;
          margin-bottom: 80px;
@@ -505,6 +513,77 @@ body {
       &__text-block {
          .text-block__title {
             font-size: 20px;
+         }
+      }
+   }
+}
+
+/*==download==*/
+
+.download {
+   background-image: url(../img/bg/download.webp);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   &__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 140px 0 130px 0;
+   }
+
+   &__text-block {
+      max-width: 850px;
+      text-align: center;
+      color: $light-text;
+      margin-bottom: 60px;
+
+      .text-block__title {
+         color: $light-text;
+      }
+   }
+
+   &__button-block {
+      .button-android,
+      .button-iphone {
+         border-radius: 10px;
+         padding: 16px 45px;
+      }
+
+      .button-android {
+         margin-right: 16px;
+      }
+   }
+}
+
+@media (max-width: 991.98px) {
+   .download {
+      &__inner {
+         padding: 120px 0 110px 0;
+      }
+   }
+}
+
+@media (max-width: 767.98px) {
+   .download {
+      &__inner {
+         padding: 100px 0 90px 0;
+      }
+
+      &__text-block {
+         margin-bottom: 40px;
+      }
+   }
+}
+
+@media (max-width: 575.98px) {
+   .download {
+      &__button-block {
+         display: flex;
+         flex-direction: column;
+         .button-android {
+            margin: 0px 0px 25px;
          }
       }
    }
